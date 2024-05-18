@@ -20,6 +20,7 @@
 
 body{
     font-family: serif;
+    background-color: black;
 }
 
 .background{
@@ -28,8 +29,8 @@ body{
     left: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     background-image: url("Galaxy.jpg");
     background-repeat: repeat;
     background-size: cover;
@@ -40,17 +41,20 @@ body{
 .content{
     color: var(--color-white);
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .content h1{
-    font-size: 95px;
-    margin-bottom: 10px;
+    font-size: 65px;
+    margin-bottom: 40px;
 }
 
 .content p{
-    font-size: 35px;
+    font-size: 19px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
+
 header{
     background-color: var(--color-black);
     display:flex;

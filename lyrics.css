@@ -1,96 +1,165 @@
-@font-face{
-    font-family: 'Quent';
+@font-face {
+    font-family: "Quent";
     src: url(Q-Regular.otf);
-    
 }
 
-:root{
-    --color-primary: #5401A3;
-    --color-primary-dark: #31005F;
+:root {
+    --color-primary: #C36890;
+    --color-primary-dark: #9E3664;
 
     --color-white: #eee;
     --color-black: #0f0f0f;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: Times New Roman;
+body {
+    font-family: serif;
+    background-color: #9E3664;
+    justify-content: center;
+    align-items: center;
+    background: #efefef;
+    line-height: 1.1;
 }
 
-.background{
+.background {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: url("Red_Black_Stars.jpg");
+    padding: 0;
+    margin: 0;
     background-repeat: repeat-y;
+    height: 100vh;
     background-size: cover;
     z-index: -1;
-    filter: blur(5px);
+    filter: blur(1px);
 }
 
-.content{
+a{
+    color: var(--color-primary-dark);
+}
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 1100px;
+    background-color: var(--color-primary-dark);
+    max-width: 100%;
+    margin: 0 auto;
+    color: #420000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #420000;
+}
+
+.card {
+    background: #fff;
+    margin: 10px 20px;
+    flex: 1 1 20rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.card btn {
+    display: inline-block;
+    background: green;
+    color: #420000;
+    text-align: center;
+    border-radius: 5px;
+    padding-right: 20px;
+    background-color: #9E3664;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.card img{
+    height: 200px;
+    width: 200px;
+    background-color: #9E3664;
+}
+
+.card p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.content {
     color: var(--color-white);
     text-align: center;
-    margin-top: 200px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
 }
 
-.content h1{
-    font-size: 95px;
-    margin-bottom: 10px;
-}
-
-.content p{
-    font-size: 35px;
-}
-header{
-    background-color: var(--color-black);
-    display:flex;
+header {
+    background-color: var(--color-primary);
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 5%;
 }
 
-.logo{
+.logo {
     font-size: 30px;
     color: var(--color-white);
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     font-size: 20px;
     color: var(--color-white);
     text-decoration: none;
     padding: 0 20px;
     transition: all 0.2s ease;
 }
-nav ul li a:hover{
-    color: var(--color-primary);
+nav ul li a:hover {
+    color: var(--color-primary-dark);
 }
 
-.btn{
+.btn {
     text-decoration: none;
-    text-transform:capitalize;
+    text-transform: capitalize;
     background-color: var(--color-primary-dark);
     padding: 10px 20px;
     border-radius: 12px;
     display: inline-block;
 }
 
-.btn-1{
+.btn-1 {
     color: white;
     border: 2px solid var(--color-primary-dark);
     display: inline-block;
@@ -99,14 +168,14 @@ nav ul li a:hover{
     border-width: 3px;
 }
 
-.btn-1:hover{
+.btn-1:hover {
     background-color: var(--color-primary-dark);
 }
 
-h6{
-    color: var(--color-white);
-    padding-left: 40px;
-    padding-right: 40px;
+h6 {
+    color: var(--color-primary-dark);
+    padding-left: 140px;
+    padding-right: 140px;
     padding-top: 40px;
     padding-bottom: 40px;
     font-size: 20px;
