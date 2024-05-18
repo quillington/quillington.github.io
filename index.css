@@ -5,8 +5,8 @@
 }
 
 :root{
-    --color-primary: #BC3030;
-    --color-primary-dark: #680000;
+    --color-primary: #5401A3;
+    --color-primary-dark: #31005F;
 
     --color-white: #eee;
     --color-black: #0f0f0f;
@@ -20,11 +20,39 @@
 
 body{
     font-family: serif;
-    letter-spacing: 0.01em;
 }
 
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("Galaxy.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.content{
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 200px;
+}
+
+.content h1{
+    font-size: 95px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 35px;
+}
 header{
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-black);
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -49,17 +77,33 @@ nav ul li a{
     color: var(--color-white);
     text-decoration: none;
     padding: 0 20px;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
-
 nav ul li a:hover{
     color: var(--color-primary);
-    
 }
 
+.btn{
+    text-decoration: none;
+    text-transform:capitalize;
+    background-color: var(--color-primary-dark);
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
 
+.btn-1{
+    color: white;
+    border: 2px solid var(--color-primary-dark);
+    display: inline-block;
+    border-radius: 12px;
+    padding: 13px 22px;
+    border-width: 3px;
+}
 
-
+.btn-1:hover{
+    background-color: var(--color-primary-dark);
+}
 
 
 

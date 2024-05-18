@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'Quent';
+    src: url(Q-Regular.otf);
+    
+}
+
+:root{
+    --color-primary: #5401A3;
+    --color-primary-dark: #31005F;
+
+    --color-white: #eee;
+    --color-black: #0f0f0f;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Times New Roman;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("Red_Black_Stars.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.content{
+    color: var(--color-white);
+    text-align: center;
+    margin-top: 200px;
+}
+
+.content h1{
+    font-size: 95px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 35px;
+}
+header{
+    background-color: var(--color-black);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.logo{
+    font-size: 30px;
+    color: var(--color-white);
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover{
+    color: var(--color-primary);
+}
+
+.btn{
+    text-decoration: none;
+    text-transform:capitalize;
+    background-color: var(--color-primary-dark);
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.btn-1{
+    color: white;
+    border: 2px solid var(--color-primary-dark);
+    display: inline-block;
+    border-radius: 12px;
+    padding: 13px 22px;
+    border-width: 3px;
+}
+
+.btn-1:hover{
+    background-color: var(--color-primary-dark);
+}
+
+h6{
+    color: var(--color-white);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
