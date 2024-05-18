@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Quent';
+    src: url(Q-Regular.otf);
+    
+}
+
+:root{
+    --color-primary: #BC3030;
+    --color-primary-dark: #680000;
+
+    --color-white: #eee;
+    --color-black: #0f0f0f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: serif;
+    letter-spacing: 0.01em;
+}
+
+header{
+    background-color: var(--color-primary-dark);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.logo{
+    font-size: 30px;
+    color: var(--color-white);
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all .2s ease;
+}
+
+nav ul li a:hover{
+    color: var(--color-primary);
+    
+}
+
+
+
+
+
+
+
