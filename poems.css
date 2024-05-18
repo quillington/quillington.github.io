@@ -20,6 +20,7 @@
 
 body{
     font-family: serif;
+    background-color: brown;
 }
 
 .background{
@@ -28,26 +29,22 @@ body{
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: url("Galaxy.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    z-index: -1;
-    filter: blur(5px);
 }
 
 .content{
     color: var(--color-white);
     text-align: center;
-    margin-top: 200px;
+    margin-top: 60px;
 }
 
 .content h1{
-    font-size: 95px;
+    font-size: 65px;
     margin-bottom: 10px;
 }
 
 .content p{
     font-size: 35px;
+    margin-bottom: 10px;
 }
 header{
     background-color: var(--color-black);
